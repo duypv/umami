@@ -9,7 +9,7 @@ services:
       DATABASE_TYPE: postgresql
       APP_SECRET: replace-me-with-a-random-string
     depends_on:
-      db:
+      db-umami:
         condition: service_healthy
     init: true
     restart: always
